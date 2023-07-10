@@ -1,0 +1,44 @@
+$background-color: #212529;
+$color: white;
+
+body {
+    background-color: $background-color;
+    color: $color;
+}
+
+.premiere {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &:first-child {
+        margin-top: 0px;
+    }
+    margin-top: 30px;
+    &:is(.hide) {
+        opacity: 0.7;
+
+        &:is(button) {
+            opacity: 1;
+        }
+
+        .hided {
+            display: block;
+            position: absolute;
+            width: 30%;
+            right: 0;
+        }
+    }
+
+    .hided {
+        display: none;
+    }
+}
+.genre {
+    padding: 1%;
+    background-color: #17181a;
+}
